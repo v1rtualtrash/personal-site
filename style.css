@@ -1,0 +1,25 @@
+/* PALETTE
+#B5E61D bg green
+#22B14C dark green
+#FFFE91 light yellow
+#B97A57 Brown*/
+
+body{
+    background-color: #B5E61D;
+}
+
+#body{
+    background-color: white;
+    height: 200px;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+header{
+    background-color: #FFFE91;
+    color: #B97A57;
+    border-radius: 20px;
+
+    font-family: cursive;
+}
