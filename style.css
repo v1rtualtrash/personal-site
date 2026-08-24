@@ -4,6 +4,17 @@
 #FFFE91 light yellow
 #B97A57 Brown*/
 
+.dotgothic16-regular {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "MS Gothic";
+    src: url(fonts/MS-Gothic/MSGOTHIC.TTF);
+}
+
 body{
     background-color: #B5E61D;
 }
@@ -14,12 +25,32 @@ body{
     border-radius: 20px;
     width: 60%;
     margin: auto;
+    padding: 1rem;
 }
 
 header{
-    background-color: #FFFE91;
+    background-image: linear-gradient(to right,#FFFE91, white);
     color: #B97A57;
     border-radius: 20px;
 
-    font-family: cursive;
+    font-family: "MS Gothic";
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    p{
+        font-size: 75px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    height: 10rem;
+
 }
+
+/*#decoracion{
+    padding: 5px;
+    background-image: linear-gradient(to right,#FFFE91, white);
+    border-radius: 20px;
+}*/
