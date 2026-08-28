@@ -15,14 +15,24 @@
     src: url(fonts/MS-Gothic/MSGOTHIC.TTF);
 }
 
+/*image classes*/
+
+.stamp{
+    height: 56px;
+    width: 99px;
+    margin-right: 5px;
+}
+
+/*html stuff*/
+
 body{
     background-color: #B5E61D;
 }
 
 #body{
     background-color: white;
-    height: 200px;
-    border-radius: 20px;
+    height: fit-content;
+    border-radius: 30px;
     width: 60%;
     margin: auto;
     padding: 1rem;
@@ -30,8 +40,8 @@ body{
 
 header{
     background-image: linear-gradient(to right,#FFFE91, white);
-    color: #B97A57;
-    border-radius: 20px;
+    color: #B5E61D;
+    border-radius: 40px;
 
     font-family: "MS Gothic";
 
@@ -48,6 +58,52 @@ header{
     height: 10rem;
 
 }
+
+#stamp-container{
+    background-color: #B5E61D; 
+    padding: 1rem; 
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+#stamp-marquee{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+    height: 57px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+
+    user-select: none;
+}
+
+#stamp-holder{
+    animation: stamp-scroll 20s infinite linear;
+    display: flex;
+}
+
+#stamp-holder:hover{
+    animation-play-state: paused;
+}
+
+/*animations*/
+@keyframes stamp-scroll {
+    0%{
+        transform: translateX(80%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #stamp-holder {
+    animation: none;
+  }
+}
+
 
 /*#decoracion{
     padding: 5px;
