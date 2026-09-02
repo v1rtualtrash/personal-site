@@ -2,17 +2,27 @@
 #B5E61D bg green
 #22B14C dark green
 #FFFE91 light yellow
-#B97A57 Brown*/
+#B97A57 Brown
 
-.dotgothic16-regular {
-  font-family: "DotGothic16", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+#E8F5E9 White
+#A5D6A7 light green
+#66BB6A green
+#1B5E20 dark green
+
+#EBF9DC White
+#C9ED97 light green
+#B6E264 green
+#6C9543 dark green
+*/
 
 @font-face {
     font-family: "MS Gothic";
     src: url(fonts/MS-Gothic/MSGOTHIC.TTF);
+}
+
+::selection {
+  color: white;
+  background: #B6E264;
 }
 
 /*image classes*/
@@ -26,11 +36,11 @@
 /*html stuff*/
 
 body{
-    background-color: #B5E61D;
+    background-color: #bee68a;
 }
 
 #body{
-    background-color: white;
+    background-color: #EBF9DC;
     height: fit-content;
     border-radius: 30px;
     width: 60%;
@@ -39,8 +49,8 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to right,#FFFE91, white);
-    color: #B5E61D;
+    background-image: linear-gradient(to right,#B6E264, #EBF9DC);
+    color: #EBF9DC;
     border-radius: 40px;
 
     font-family: "MS Gothic";
@@ -52,7 +62,6 @@ header{
     p{
         font-size: 75px;
         margin: auto;
-        margin-bottom: 10px;
         margin-left: 10px;
     }
     height: 10rem;
@@ -60,14 +69,14 @@ header{
 }
 
 #stamp-container{
-    background-color: #B5E61D; 
+    background-color: #C9ED97; 
     padding: 1rem; 
     border-radius: 20px;
     margin-top: 1rem;
 }
 
 #stamp-marquee{
-    background-color: white;
+    background-color: #EBF9DC;
     padding: 10px;
     border-radius: 20px;
 
@@ -86,6 +95,91 @@ header{
 
 #stamp-holder:hover{
     animation-play-state: paused;
+}
+
+main{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav{
+    background-color: #B6E264;
+    padding: 1rem;
+
+    border-radius: 20px;
+
+    width: 20rem;
+    height: fit-content;
+
+    font-family: "MS Gothic";
+
+    ul{
+        list-style-type: none;
+    }
+
+    #nav-title{
+        background-image: linear-gradient(to right, #EBF9DC, #B6E264);
+        padding: 10px;
+        border-radius: 20px;
+        height: 2rem;
+        color: #6C9543;
+        display: flex;
+        align-items: center;
+
+        h3{
+            margin: 0;
+        }
+    }
+
+    .nav-item{
+        padding: 10px;
+        border-radius: 50px;
+        text-align: right;
+        user-select: none;
+        a:link{
+            color: black;
+        }
+
+        a:visited{
+            color: #6C9543;
+        }
+    }
+
+    #nav-1:hover{
+        background-image: linear-gradient(to left, #EBF9DC, #EBF9DC);
+        color: #6C9543;
+        a:link{
+            color: #6C9543;
+        }
+    }
+
+    #nav-1{
+        background-image: linear-gradient(to left, #C9ED97, #B6E264);
+    }
+}
+
+#persona{
+    height: 700px;
+    float: left;
+}
+
+#buttons{
+    background-color: #6C9543;
+    border-radius: 50px;
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+#info-holder{
+    background-color: #C9ED97;
+    width: 45rem;
+    border-radius: 20px;
+
+    padding: 1rem;
+
+
+    font-family: "MS Gothic";
 }
 
 /*animations*/
