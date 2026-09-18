@@ -1,0 +1,44 @@
+/*classes*/
+
+.holder{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.character{
+    background-color: aqua;
+    width: 7rem;
+    height: 9.5rem;
+    border-radius: 10px;
+
+    padding: 5px;
+    text-align: center;
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    p{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}
+
+/*other*/
+
+html{
+    background-image: url("/imgs/Background2.png");
+    background-repeat: repeat;
+    background-size: 250px;
+}
+
+body{
+    width: 60%;
+    margin: auto;
+}
+
+main{
+    display: flex;
+    gap: 1rem;
+}
