@@ -1,13 +1,26 @@
 /*classes*/
 
 .holder{
+    background-color: pink;
+    padding: 1rem;
+    border-radius: 20px;
+
+    h3{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.character-holder{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-evenly;
 }
 
 .character{
-    background-color: aqua;
+    background-color: white;
+    border: 2px palevioletred solid;
     width: 7rem;
     height: 9.5rem;
     border-radius: 10px;
