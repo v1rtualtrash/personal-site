@@ -1,9 +1,34 @@
+@font-face {
+    font-family: "MSGothic";
+    src: url(/fonts/MS-Gothic/MSGOTHIC.TTF);
+}
+
+.dotgothic16-regular {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:link{
+    color: plum;
+}
+
+a:visited{
+    color: plum;
+}
+
+::selection {
+  color: white;
+  background: rgb(221, 160, 185);
+}
+
 /*classes*/
 
 .holder{
     background-color: pink;
     padding: 1rem;
     border-radius: 20px;
+    margin-bottom: 1rem;
 
     h3{
         margin: 0;
@@ -28,6 +53,8 @@
     padding: 5px;
     text-align: center;
 
+    font-family: "MSGothic";
+
     img{
         height: 100px;
         width: 100px;
@@ -44,14 +71,39 @@ html{
     background-image: url("/imgs/Background2.png");
     background-repeat: repeat;
     background-size: 250px;
+
+    scroll-behavior: smooth;
 }
 
 body{
-    width: 60%;
-    margin: auto;
+    margin-top: 3rem;
+
+    font-family: "DotGothic16", sans-serif;
+    color: palevioletred;
+}
+
+hr{
+    border: 2px pink dashed;
 }
 
 main{
-    display: flex;
-    gap: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+aside{
+    background-color: white;
+    border: 2px pink solid;
+    border-radius: 20px;
+
+    padding: 1rem;
+    padding-left: 0;
+
+    position: fixed;
+    left: 16rem;
+}
+
+footer{
+    padding: 1rem;
+    background-color: white;
 }
